@@ -644,7 +644,6 @@ static NSString *RKMIMETypeFromAFHTTPClientParameterEncoding(AFHTTPClientParamet
         } else if ([object respondsToSelector:@selector(managedObjectContext)]) {
             managedObjectContext = [object managedObjectContext];
         }
-        
         operation = [self managedObjectRequestOperationWithRequest:request responseDescriptors:matchingDescriptors managedObjectContext:managedObjectContext success:nil failure:nil];
 
         if ([object isKindOfClass:[NSManagedObject class]]) {
